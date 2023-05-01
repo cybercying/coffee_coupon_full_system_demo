@@ -355,7 +355,7 @@ class AppSettings extends GetxController {
     rootBundle.evict(inputTr);
     return inputTr
         .replaceAll("{r}", appConfig.appAssetPathPrefix)
-        .replaceAll("{md}", '${appConfig.appAssetPathPrefix}/assets/markdown');
+        .replaceAll("{md}", '${appConfig.appAssetPathPrefix}assets/markdown/');
   }
 
   Future<void> reloadAppAssets(String locale) async {
