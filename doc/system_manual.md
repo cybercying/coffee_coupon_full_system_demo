@@ -16,7 +16,7 @@ It's not like that I haven't developed on Apple's platform before. In fact, I di
 So that brings us back to the topic of [sponsorship](https://fundrazr.com/flutter_full_demo). I really like to take care of the Apple community, as long as I have enough funding. So please consider sponsoring me so that in addition to my basic needs, it can also pay for the fund needed to buy me an iPhone, an iPad, and a development Mac, and to (re)join the Apple Developer Program.
 
 ## How to setup remote server?
-The demo app runs standalone with an embedded server, which requires no setup. This is convenient for simple demos. If you need to run actual remote scenario, the server code is located under [server](server/) subdirectory, written in pure Dart.
+The demo app runs standalone with an embedded server, which requires no setup. This is convenient for simple demos. If you need to run actual remote scenario, the server code is located under [server](../server/) subdirectory, written in pure Dart.
 
 To run the server, first use **"dart pub get"** to install necessary dependencies. Then just use **"dart bin/server.dart"** in the server directory. It default listens to **port 8080**. The database is stored in the **".hive"** subdirectory of the server.
 
