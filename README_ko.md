@@ -1,20 +1,20 @@
-# Full Flutter System Demo for Coffee Coupons
+# 커피 쿠폰을위한 완전한 플러터 시스템 데모
 [[English]](README.md)&emsp;[[中文]](README_zh.md)&emsp;[[日本語]](README_ja.md)&emsp;[[한국어]](README_ko.md)&emsp;[[español]](README_es.md)
 
-This project provides a full [Flutter](https://flutter.dev/)/Dart system template from front-end APPs to the backend database to demonstrate a coupon management system, which is suitable for a coffeehouse chain (or any restaurant chain) to build customer loyalty. This project includes several major components:
+이 프로젝트는 완전한 [플러터](https://flutter-ko.dev/)/Dart 시스템 템플릿을 프론트 엔드 앱에서 백엔드 데이터베이스까지 제공하여 커피 하우스 체인(또는 어떤 음식 체인점)에 고객 충성도를 구축하기 위해 적합한 쿠폰 관리 시스템을 데모합니다. 이 프로젝트에는 몇 가지 주요 구성 요소가 포함됩니다:
 
-1. Guest APP for store guest to use coupons.
-2. Admin APP for staff to manage the system.
-3. Back-end server, that interacts with the two APPs through JSON-based API by HTTP. Provides database storage and business logic handling.
+1. 고객를위한 게스트 앱.
+2. 시스템 관리하는 직원을위한 관리자 앱.
+3. 백엔드 서버는 HTTP의 JSON 기반 API를 통해 앞서 언급한 두 앱과 상호 작용합니다. 데이터베이스 스토리지 및 비즈니스 로직 처리를 제공합니다.
 
-## Highlights
-1. **Full featured.** All operation in the demo system, unless otherwise marked, is fully functional in a closed environment simulation.
-2. **Easy to use demo.** In a minimal configuration, only one APP is required to install to experience all demo features.
-3. **Multilingual support.** 4 languages are supported: English, Chinese(繁體中文), Japanese(日本語), and Korean(한국어).
-4. **Pure Dart and standalone.** Provides the advantage of easy migration to various platforms. Both client and server are implemented in Dart language. The demo system can run by itself because no dependencies on external services, such as Firebase.
+## 하이라이트
+1. **완전한 기능.** 달리 표시되지 않는 밖에 데모 시스템의 모든 작업은 폐쇄 된 환경 시뮬레이션에서 완전히 작동합니다.
+2. **사용하기 쉬운 데모.** 최소 구성에서는 모든 데모 기능을 경험하기 위해 하나의 앱 만 설치하면됩니다.
+3. **다국어 지원.** 4 언어가 지원됩니다 : 영어, 중국어, 일본어 및 한국어.
+4. **Pure Dart과 독립실행.** 다양한 플랫폼으로 쉽게 마이그레이션 할 수있는 이점을 제공합니다. 클라이언트와 서버는 모두 Dart 언어로 구현됩니다. Firebase와 같은 외부 서비스에 대한 의존성이 없으니까, 독립실행 할수있습니다.
 
-## Screenshots
-Because there are too many screenshots, in this document we only list some highlights. [**Click here to see all screenshots.**](doc/all_screenshots.md)
+## 스크린 샷
+스크린 샷이 너무 많기 때문에 이 문서에는 일부 하이라이트 만 나열합니다. [**모든 스크린 샷을 보려면 여기를 클릭하십시오.**](doc/all_screenshots.md)
 
 ![](https://lh3.googleusercontent.com/u/0/docs/ADP-6oHn_N6g_DFcC5k0ILv3zzC18srHjQ4kkBTCgYz_yGuwvG9f0vB9fwUARsVWJV7IgU_x18iyGNTD4IvebQYGIXKNdmnuu2R5R8gUBP581Mu0DcOz5qam3WB_655d4qkss4A2artMa1Cx-DAehzx0nzqzccmvRxTdAUcYs1NPpLfbB68BQ6oStXrz_vMfi60NT_pQjIGL8ewYDPwNmzboqbp-SXpaSTCc6TKLfxNYDBJq22IuLqEPyuVV3-vdRseBgNDU1QaWEm4W2Q6WN66SlS-zjjYBEZzrZrLcyM1WUSSUko0aRBUBbNYKHE5xZzWuksGMQn-Ui3peFdqFckUUB5zzmUWq76jQ5fjeeZsOAaVYte75jffeEltw0ZAkSzbvBnN_3RMT3FnctHVBmJn04zaq7_JxFDnXXceXCpEFrNfb_kvRXvk59XPqO4NNZgNQrE-8vpZAXJ047PAxJrwWWkqPKYuFyBSngnDxS47602V4EZcyt8P2B67gjpvnMpOD3B9eZMXsm7pmmbH8pb2NZHwTVY0tocL9uKCsb8nOjG1eoIGRy6Do2gWRkP46kmn81GdPy54WkhzRE5YGuKrXFoke79ggNQ8_teVp7DeG8PP-KQOg33rjVlT10p4aiXP2yxM-4JSrWQPDpwUN9-pzxRPKtLXWGhsD7C91d8LgAnxW5_kNUdcz25guszUVYH7MdF4gRbtekpE6TmHQqkM1GYV9p6LMd3-WtagPU-GMrrxW7mYULjs1FzLrMfX5eV1wc3aVQdcEZ6Ba27VjrZslzFb45rPizMdLa3mI7cfvQTnnFezSpktdUFq8f7iBIQH_4_-xnQGDNLUDsP4puvSBQn8jFdspn0dzTu9uAcwwuDWn90S-I5SbTeW5WjBber0SyTyCOO7lI9mo5p5yXUsoy6scUVo)
 ![](https://lh3.googleusercontent.com/u/0/docs/ADP-6oEaXOhslWBRpw4MuP3KuEVueMxIAdUiQAqHxsFVm7dcmxXsl5szMayK5AMDMVtH_PA1kCx3Ka9AhdAyjKYtsH9P84Y0nsV9eEgp432_E_mCMYoOTzwEhX95z44u683wklQN4uX2WVDWsxNkmoXGTqqLGr-UYPpKH9nANUiW7QOsw8D9Lv8cEe_IKeLPBi2g_JebnFHwz1xnlGR1BodmFJosW_7v5nVqvd05JGXwQk96522w2SpEaoFQhBA0_gKC-4ONVv86Q2SeS1vSYdJ8l7-y0a8nYLR4geeDQhi-QIL-By3ybxdVri9gh77Um8DJuW6Q0IebVTHYP5bDPfABYvnUhIlp4ZUwTxZEgCvHqkIEyDzViG-VBRfClcBOP3YJWz9N1bn-HmQzzZNLAJJu4fxPxDgR8YrxtOVztd2lx7X7YU180b7EX6xVkZJyrKkevc8d76TBq8JCVuGB3f22W28CzHEu0ZdFDR0SGuzHJUS3zJrijmf-FXJIyZ6e6R7KfrgZ615oUCo4V0PQEghoqoJBNWQfnlEEHqS9JsQJABFUkJRTE2JR78lX16f3cqAG4ATSJLIeflt9QYJ2o0ojxP35lazD0iAzK5n7TwUU658kom4R-9itXmHPJKbuPJdFrcDwWdcSKrINzRsWe1xw9HW32L8MBDOSRe1gJdc70Vx4NX1pwbD3oSHGP2fGpg_qD1k5ogC2YUroDOXhxADEdajtTBEIyaMysMAUb8tqtVCFjr-S7kZz9i3WM95KvcvS4okHIWVBtFf6ihjZQeo-8W0Uv07Jp6o0YdnTECJFy6ZdUFk68q9hpkTi2NjCiwFVHSMmas5JWjo5-69pKH1K184H8WniOCpvkkFtsEmpZ33Y5xWzHyV2lsF6TQiUNk5oow6C2MOlHXvbQc5wxKGdPV7y3ug)
@@ -38,30 +38,30 @@ Because there are too many screenshots, in this document we only list some highl
 ![](https://lh3.googleusercontent.com/u/0/docs/ADP-6oFnogXmTiVIF0CkPxLfuwbw08eQ03zRhTgQEAxzXKlv5uNeZSOp716QhVHrTGf4BuSGWcDIgVU6u3k1Zs-Xwr_l2yxXRGLXRH5Xz_64-QxmnSD0hZHZNVTRdREoEpIpnUBGnR6k89jeAsnu5FEGZqx82tm-y1cWwj3mbQVo4p-ojk1nQ4Sas9pzrSdlVavzt5ofPk_pGUwafbUAe0RUSsRfLS8ZEY-NRd0ONKKGITtM5I51Tq0JiRfxjtTGTxqwcPBhGMxW--S8nOgHyxmyseTckozeq7N-I6VOBq6xNvI6oj67x43MaQFEpEhnHGQBMOCSFFQzy6w631twW2YIK_PMwffpq2ZbgiffwrX6ehwkoDC0gcaSobDjs-z2F_uB3evVzHlbAmGMUli2rYxOSKZVMQ0RvfeiLfDuaaYfl9ZR4Ka0nvlgj4v_lcf-sVLCgUf37leghPv9sR5Z0RnIkcxgANCpLxI_dij2QyxD-i1wQknRbzT4KU_1HzG5yDUhGOPxlMS4CGhz0kj6TqX8kSPXmjp_gTDAYwn7qq02ZmpWRlVJaTXjUU0HRnj7lBNMlq8sWJCRqzMlpuFDm8VsyrQz8rVIr0KlMBEOLqBHaGMdGe-5U0R2pzK-rwmiNXQrlezFITGna6V2O-0btlmDqJb3Gt7FLQ4MITLG9YWd-qkhN00EPiO-UdT8zxdHPnBHUqWGegPXvS5dLBsrRsKZSQrq2XJ51fbhSm5Q0FpmWWHWC1boKbz_VAsTjZu2i2dJrcLmZieHKUCS55p0a3y46TufUZrW-f0JcTWpDF7lXHHUANm6v6h6LfFKDl22zBFjn91I91JOC3hJugBKYJGCCmeFwh1meI2-7gLWzu0LkKTNZBKQNCJk3ZtgN7FbLc4ikTF1E-dareQmBCVYCYUA12gJZaQ)
 ![](https://lh3.googleusercontent.com/u/0/docs/ADP-6oEbdnW1jLf3TfFGuxOQOZRgodKmU49onvyVGKBPwwyD8eWl_S6ZI_egBYevuiYo_ZzOjmqdm5hoMfgWSF5bCuxEZOet1nNMNfUYXDb-ackntv1vlSah_yKmotaHN1CV2R90ETOOr61cT_KwBue0SiKZbV0A1cscBaGyOItkM-1Fxoguq2aABjiGLn4gSKGkw69TqalebL5SOn6crtXk7z-SlS6bWDpqj6wWRug_0Zopfx9ITdkRRXwJSd5uDhPjebyWFkBHgjUyItfGpIsZqTuYW4jnWEtbYyCdG_f521cPfZRYCZAm8_Gl5bCIF91h2e5Qb6amAfotZ9FPfgBIqrAxz53ZAfqpAXL7CrJrNQKbu7haXfuJSP4z5j3YXDAzeZTkdE6fukIs1OD_lv0SACH1SQ3x2WjhOTn3eau8-WhlyYIB61Pj9exEXYc_6EUfWXxcKklnwYpZ2E8lM6uaatbxEq7DwQ6czNeacQhqTjnjEIYKrWH-1YwDkXzFIIIpUAp-IvogQRpYPJ9NgR-VaLaBewkdIFCs7YjNgF5lJTWibEw0vwgNiCdvesLCf7gSwb_fVA4Vg5MV3pLQiaPS7b5w0BupnZQaJXHYHIrr2NSnPJPq4G3dBFsEXSkaIhWErWeFfIgfsfV69HUG6fHxwphOZT2TBVHTOg2hMPuReHFt-qsW9EklPuyZY4qlO4TmG-yaFKknk_BsDzMTQaU6cOTFTEjwvVgVRzhqkXNz1RHGARYd0KIOagifIdgAkluuV9pwvKI2Iu8-A004BBXE-_0Ne6QBB32HYLEeFiGpsDFdS8VDEatpYS93in1J57XxrjqGucKOokZP3jIsS7xMzSXIT8tnsxYyjvRd25PX4012Il8hbM1GErGW_nZh8sRQfk6ghdbj2rtVAK7dvSpt9S_879U)
 
-## Full system demo fits in a single app 
-To make this demo system easy to use, the system does not depend on any external services, such as Firebase, Google Cloud Notification, Dockers, or any Email/SMS service. Yet implementation such as account verification and push notification is provided for the sake of completeness. <mark>**All operation in the demo system, unless otherwise marked, is fully functional in a closed environment simulation.**</mark>
+## 전체 시스템 데모는 단일 앱에 거둡나다
+이 데모 시스템을 쉽게 사용하기 위해 시스템은 Firebase, Google Cloud 알림, Dockers 또는 이메일/SMS 서비스와 같은 외부 서비스에 의존하지 않습니다. 그러나 완전성을 위해 계정 확인 및 푸시 알림과 같은 구현이 제공됩니다.<mark>**달리 표시되지 않는 한 데모 시스템의 모든 작업은 폐쇄 된 환경 시뮬레이션에서 완전히 작동합니다.**</mark>
 
-For this to work, we introduce the concept of **"mock devices"**. It means we can simulate multiple devices (smartphones or tablets) in a single app. The back-end server also runs embedded with this app by default (can be changed to connect to a remote server by options). In a minimal configuration, you only need to **install one APP**, and this APP can simulate multiple devices running multiple apps by actors with various roles. This is also desirable to demo scenarios such as the interaction among multiple guests, multiple staff, and administrators.
+이 목표를 달성하기 위해 "**모의 장치**"라는 개념을 도입해야합니다. 이는 단일 앱에서 여러 장치 (스마트 폰 또는 태블릿)를 시뮬레이션 할 수 있음을 의미합니다. 백엔드 서버는 기본적으로 이 앱과 함께 내장하게 실행되는데 옵션으로 원격 서버에 연결하도록 변경할 수 있습니다. 최소한의 구성에서는 하나의 데모앱 를 설치하면 다양한 역할을 가진 여러 앱을 실행하는 여러 장치를 시뮬레이션 할 수 있습니다. 이는 여러 손님, 여러 직원 및 관리자 간의 상호 작용과 같은 데모 시나리오에는 적합하다.
 
-## Application Features
-1. **Guest registration:** Guest register by phone number and OTP code (by simulated SMS), and then update basic information.
-2. **Coupon redeem:** Guests can choose to use coupons from a list of admin-defined policies according to their individual available points. For example, use 5 points to exchange an espresso coffee or a glass of orange juice. If the guest has enough points and the coupon is redeemed successfully, the points will be deducted from the guest's account. A transaction will be saved for a later query.
-3. **User management:** Staff or managers (in our system, they have the role of _user_ which is different from _guest_) can use the admin app to manage (create, delete, update, or query) users. The additional function includes password reset by Email, by phone, or by manually.
-4. **Store management:** Staff or managers can use the admin app to create, delete, update, or query stores. A store can be configured to link to multiple users. Each link has the attribute of either staff or manager, representing the user's role in that store. A user in a manager role can manage all the users in that store, but not others as restricted by the system for security purposes. In contrast, a user in an administrator role can manage _all users_. A user in a staff role can give points to guests as store gifts. This is done by scanning the 2D bar code generated by the guest's app using the admin app. A list of stores is also available to be displayed in the guest app for finding directions.
-5. **Transaction management:** Staff or managers can create, delete, update, or query transactions. A transaction can be a record of an order a guest has placed in a certain store or points give and takes. For example, if a guest spends more than $20 then he can get 5 points, he or she can then use the 5 points to exchange for another cup of coffee.  A transaction keeps a record like that. In reality, integration with the POS system might be needed, but this is just for demo purposes.
-6. **Mock device management:** As mentioned before, in order to demo actors with various roles with ease, we need the ability to simulate multiple devices. These devices can have different (mock) phone numbers or Emails in order to receive verification codes sent by the server. You can easily manage these mock devices or check messages for a specific device in the demo app.
+## 응용 기능
+1. **고객 등록:** 전화 번호 및 OTP 코드(시뮬레이션 된 SMS) 로 고객 등록 한 다음 계좌에서 기본 정보를 업데이트하니다.
+2. **쿠폰 사용:** 고객은 개별 가용한 포인트에 따라 관리자 정의 정책 목록에서 쿠폰을 사용할 수 있습니다. 예를 들어, 5 포인트을 사용하여 Espresso 커피 또는 오렌지 주스 한 잔을 교환하다고 합니다. 고객에게 충분한 포인트가 있고 쿠폰이 성공적으로 사용되면 고객의 계좌에서 포인트가 공제됩니다. 이 이벤트의 기록은 후속 감사를 위해 트랜잭션 형식으로 저장됩니다.
+3. **사용자 관리:** 직원 또는 매니저 (우리 시스템에서 고객 와 다른 사용자의 역할이 있습니다)는 관리자 앱을 사용하여 사용자를 관리 (작성, 삭제, 업데이트 또는 쿼리) 할 수 있습니다. 그밖에 기능에는 이메일, 전화 또는 수동으로 비밀번호 재설정이 포함됩니다.
+4. **상점 관리:** 직원 또는 매니저는 관리 앱을 사용하여 매장를 작성, 삭제, 업데이트 또는 쿼리 할 수 있습니다. 매장는 여러 사용자에게 링크하도록 구성 할 수 있습니다. 각 링크에는 직원 또는 매니저의 속성이 있으며 해당 매장에서 사용자의 역할을 나타냅니다. 매니저 역할의 사용자는 해당 매장의 모든 사용자를 관리 할 수 있는데 다른 사용자를 관리할 수 없습니다. 한편, 관리자 역할의 사용자는 모든 사용자를 관리 할 수 있습니다. 직원 역할의 사용자는 고객에게 매장 선물로 포인트를 제공 할 수 있습니다. 이는 관리자 앱을 사용하여 게스트 앱에서 생성 된 2D 바코드를 스캔하기로 수행됩니다. 길을 가르쳐주기 위해 게스트 앱에 매장 목록을 표시 할 수 있습니다.
+5. **트랜잭션 관리:** 직원 또는 매니저는 트랜잭션을 생성, 삭제, 업데이트 또는 쿼리 할 수 있습니다. 트랜잭션는 고객이 특정 매장에 주문 또는 포인트의 증가 또는 감소를 기록할 수 있습니다. 예를 들어, 고객이 20 달러 이상을 소비하면 5 포인트를 얻을 수 있으면 그 5 포인트를 사용하여 다른 커피 한 잔을 교환 할 수 있습니다. 트랜잭션는 그런 기록을 저장합니다. 실제로 POS 시스템과의 통합이 필요할 수도 있지만 이는 데모 목적을위한 만 것입니다.
+6. **모의 장치 관리:** 앞에서 언급 한 바와 같이, 다양한 역할을 가진 인원를 쉽게 데모하려면 여러 장치를 시뮬레이션 할 수있는 기능이 필요합니다. 이 장치는 서버에서 검증 코드를 받기 위해 다른 (모의) 전화 번호 또는 이메일을 가질 수 있습니다. 데모 앱에서 이러한 모의 장치를 쉽게 관리하거나 특정 장치에 대한 메시지를 체크할 수 있습니다.
 
-## System Features
-1. **Pure Dart**: The code is written in pure Dart completely. There is no need for native dependency such as SQLite. For this, we have chosen [Hive](https://github.com/hivedb/hive) as the backend storage. Hive is known for its performance and scalability. The front-end app is developed with Flutter SDK, while the back-end is developed only with Dart SDK (no Flutter is required for the server, we think it's the correct way to do this). Pure Dart provides the advantage of easy migration to various platforms without the hassles to deal with platform-dependent stuff.
-2. **Configurable embedded/remote server:** The backend server runs embedded with the demo app by default. This can be changed by options in the demo app to connect to a remote server. By doing so, you need to prepare your own computer running the server instance and enter the correct server URL in the demo app.
-3. **Multilingual support:** The front-end app is fully multilingual support. It comes default with 4 languages: English, Chinese(繁體中文), Japanese(日本語), and Korean(한국어). This can be configured in the demo app at any time.
-4. **Dark mode support:** Dark mode can be enabled or disabled in the demo app at any time.
+## 시스템 기능
+1. **Pure Dart**: 코드는 Pure Dart로 완전히 작성되었습니다. SQLite와 같은 네이티브 의존성이 필요하지 않습니다. 이를 위해 백엔드 스토리지는 [Hive](https://github.com/hivedb/hive)를 선택했습니다. Hive는 높은 성능과 확장성으로 유명합니다. 프론트 엔드 앱은 플러터 SDK로 개발되었으며 백엔드는 Dart SDK만으로 개발됩니다 (서버에는 플러터가 필요하지 않으므로 그야말로 올바르게 수행하는 방법이라고 생각합니다). Pure Dart는 플랫폼 의존성을 다루기 위해 번거로움없이 다양한 플랫폼으로 쉽게 마이그레이션 할 수있는 이점을 제공합니다.
+2. **선택 가능한 내장/원격 서버:** 백엔드 서버는 기본적으로 데모 앱으로 내장되어 실행됩니다. 데모 앱의 옵션으로 원격 서버에 연결하려면 변경할 수 있습니다. 그렇게 하면 서버를 실행하는 컴퓨터를 스스로 준비하고 데모 앱에서 올바른 서버 URL을 입력해야합니다.
+3. **다국어 지원:** 프론트 엔드 앱은 4 언어가 지원됩니다: 영어, 중국어, 일본어 및 한국어.(한국어). 이것은 언제든지 데모 앱에서 설정 할 수 있습니다.
+4. **다크 모드 지원:** 다크 모드를 사용하는지는 데모 앱에서 설정 할 수 있습니다.
 
-## Sponsor me for more development
-If this demo system is useful to you, please consider [sponsor me](https://fundrazr.com/flutter_full_demo). This will allow me to devote more time improving this project or create more projects like this.
+## 더 많은 개발을 위해 저를 스폰서하십시오
+이 데모 시스템이 유용한다고 생각하시면  [저를 스폰서](https://fundrazr.com/flutter_full_demo)하다고를 고려해보십시오. 이를 통해 저는 그 프로젝트를 개선하는 데 더 많은 시간을 투입하거나 이와 같은 더 많은 프로젝트를 만들 수 있습니다.
 
-Do you want to add more features? [Reach me out](https://github.com/cybercying).
+더 많은 기능을 추가 하시겠습니까? [저에게 연락하십시오](https://github.com/cybercying).
 
-## Manuals and other documents
+## 매뉴얼 및 기타 문서 (영어)
 * [System manual](doc/system_manual.md)
 * [License](LICENSE) (MIT license)

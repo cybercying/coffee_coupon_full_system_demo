@@ -1,20 +1,19 @@
-# Full Flutter System Demo for Coffee Coupons
+# 咖啡優惠券的完整Flutter範例系統demo
 [[English]](README.md)&emsp;[[中文]](README_zh.md)&emsp;[[日本語]](README_ja.md)&emsp;[[한국어]](README_ko.md)&emsp;[[español]](README_es.md)
 
-This project provides a full [Flutter](https://flutter.dev/)/Dart system template from front-end APPs to the backend database to demonstrate a coupon management system, which is suitable for a coffeehouse chain (or any restaurant chain) to build customer loyalty. This project includes several major components:
+本專案提供了一個完整的 [Flutter](https://flutter.dev/)/Dart 系統模板，以前端APP到後端資料庫等來 demo 一個優惠券管理系統的各項功能，適用於連鎖咖啡店（或其他任何連鎖餐廳、品牌等） 以建立顧客忠誠度。本專案包括幾個主要部分：
+1. 供顧客用的 Guest APP。
+2. 供管理員或職員進行系統管理的 Admin APP。
+3. 後端伺服器，通過基於 JSON 的 API 使用 HTTP 與前述兩種 APP 進行互動。提供資料庫存儲和商業邏輯處理等功能。
 
-1. Guest APP for store guest to use coupons.
-2. Admin APP for staff to manage the system.
-3. Back-end server, that interacts with the two APPs through JSON-based API by HTTP. Provides database storage and business logic handling.
+## 特色
+1. **功能完整**：Demo 系統中的所有操作，除有特別註明外，皆能在封閉環境中模擬及執行其完整功能。
+2. **簡單易用的 demo**：在極簡配置下，只需安裝一個 APP 就能體驗所有 demo 功能。
+3. **支援多國語言**：目前支援 4 種語言：英文、中文、日文、韓文。
+4. **Pure Dart且可獨立運作**：提供輕鬆移植到各種平台的優勢。程式碼的部份，client及server都使用Dart語言撰寫，不依賴如Firebase等的外部服務就能獨立運行。
 
-## Highlights
-1. **Full featured.** All operation in the demo system, unless otherwise marked, is fully functional in a closed environment simulation.
-2. **Easy to use demo.** In a minimal configuration, only one APP is required to install to experience all demo features.
-3. **Multilingual support.** 4 languages are supported: English, Chinese(繁體中文), Japanese(日本語), and Korean(한국어).
-4. **Pure Dart and standalone.** Provides the advantage of easy migration to various platforms. Both client and server are implemented in Dart language. The demo system can run by itself because no dependencies on external services, such as Firebase.
-
-## Screenshots
-Because there are too many screenshots, in this document we only list some highlights. [**Click here to see all screenshots.**](doc/all_screenshots.md)
+## 系統截圖
+由於圖片太多，此處我們只放一些精彩截圖。[**若要觀看所有截圖請按此處。**](doc/all_screenshots.md)
 
 ![](https://lh3.googleusercontent.com/u/0/docs/ADP-6oHn_N6g_DFcC5k0ILv3zzC18srHjQ4kkBTCgYz_yGuwvG9f0vB9fwUARsVWJV7IgU_x18iyGNTD4IvebQYGIXKNdmnuu2R5R8gUBP581Mu0DcOz5qam3WB_655d4qkss4A2artMa1Cx-DAehzx0nzqzccmvRxTdAUcYs1NPpLfbB68BQ6oStXrz_vMfi60NT_pQjIGL8ewYDPwNmzboqbp-SXpaSTCc6TKLfxNYDBJq22IuLqEPyuVV3-vdRseBgNDU1QaWEm4W2Q6WN66SlS-zjjYBEZzrZrLcyM1WUSSUko0aRBUBbNYKHE5xZzWuksGMQn-Ui3peFdqFckUUB5zzmUWq76jQ5fjeeZsOAaVYte75jffeEltw0ZAkSzbvBnN_3RMT3FnctHVBmJn04zaq7_JxFDnXXceXCpEFrNfb_kvRXvk59XPqO4NNZgNQrE-8vpZAXJ047PAxJrwWWkqPKYuFyBSngnDxS47602V4EZcyt8P2B67gjpvnMpOD3B9eZMXsm7pmmbH8pb2NZHwTVY0tocL9uKCsb8nOjG1eoIGRy6Do2gWRkP46kmn81GdPy54WkhzRE5YGuKrXFoke79ggNQ8_teVp7DeG8PP-KQOg33rjVlT10p4aiXP2yxM-4JSrWQPDpwUN9-pzxRPKtLXWGhsD7C91d8LgAnxW5_kNUdcz25guszUVYH7MdF4gRbtekpE6TmHQqkM1GYV9p6LMd3-WtagPU-GMrrxW7mYULjs1FzLrMfX5eV1wc3aVQdcEZ6Ba27VjrZslzFb45rPizMdLa3mI7cfvQTnnFezSpktdUFq8f7iBIQH_4_-xnQGDNLUDsP4puvSBQn8jFdspn0dzTu9uAcwwuDWn90S-I5SbTeW5WjBber0SyTyCOO7lI9mo5p5yXUsoy6scUVo)
 ![](https://lh3.googleusercontent.com/u/0/docs/ADP-6oEaXOhslWBRpw4MuP3KuEVueMxIAdUiQAqHxsFVm7dcmxXsl5szMayK5AMDMVtH_PA1kCx3Ka9AhdAyjKYtsH9P84Y0nsV9eEgp432_E_mCMYoOTzwEhX95z44u683wklQN4uX2WVDWsxNkmoXGTqqLGr-UYPpKH9nANUiW7QOsw8D9Lv8cEe_IKeLPBi2g_JebnFHwz1xnlGR1BodmFJosW_7v5nVqvd05JGXwQk96522w2SpEaoFQhBA0_gKC-4ONVv86Q2SeS1vSYdJ8l7-y0a8nYLR4geeDQhi-QIL-By3ybxdVri9gh77Um8DJuW6Q0IebVTHYP5bDPfABYvnUhIlp4ZUwTxZEgCvHqkIEyDzViG-VBRfClcBOP3YJWz9N1bn-HmQzzZNLAJJu4fxPxDgR8YrxtOVztd2lx7X7YU180b7EX6xVkZJyrKkevc8d76TBq8JCVuGB3f22W28CzHEu0ZdFDR0SGuzHJUS3zJrijmf-FXJIyZ6e6R7KfrgZ615oUCo4V0PQEghoqoJBNWQfnlEEHqS9JsQJABFUkJRTE2JR78lX16f3cqAG4ATSJLIeflt9QYJ2o0ojxP35lazD0iAzK5n7TwUU658kom4R-9itXmHPJKbuPJdFrcDwWdcSKrINzRsWe1xw9HW32L8MBDOSRe1gJdc70Vx4NX1pwbD3oSHGP2fGpg_qD1k5ogC2YUroDOXhxADEdajtTBEIyaMysMAUb8tqtVCFjr-S7kZz9i3WM95KvcvS4okHIWVBtFf6ihjZQeo-8W0Uv07Jp6o0YdnTECJFy6ZdUFk68q9hpkTi2NjCiwFVHSMmas5JWjo5-69pKH1K184H8WniOCpvkkFtsEmpZ33Y5xWzHyV2lsF6TQiUNk5oow6C2MOlHXvbQc5wxKGdPV7y3ug)
@@ -38,30 +37,31 @@ Because there are too many screenshots, in this document we only list some highl
 ![](https://lh3.googleusercontent.com/u/0/docs/ADP-6oFnogXmTiVIF0CkPxLfuwbw08eQ03zRhTgQEAxzXKlv5uNeZSOp716QhVHrTGf4BuSGWcDIgVU6u3k1Zs-Xwr_l2yxXRGLXRH5Xz_64-QxmnSD0hZHZNVTRdREoEpIpnUBGnR6k89jeAsnu5FEGZqx82tm-y1cWwj3mbQVo4p-ojk1nQ4Sas9pzrSdlVavzt5ofPk_pGUwafbUAe0RUSsRfLS8ZEY-NRd0ONKKGITtM5I51Tq0JiRfxjtTGTxqwcPBhGMxW--S8nOgHyxmyseTckozeq7N-I6VOBq6xNvI6oj67x43MaQFEpEhnHGQBMOCSFFQzy6w631twW2YIK_PMwffpq2ZbgiffwrX6ehwkoDC0gcaSobDjs-z2F_uB3evVzHlbAmGMUli2rYxOSKZVMQ0RvfeiLfDuaaYfl9ZR4Ka0nvlgj4v_lcf-sVLCgUf37leghPv9sR5Z0RnIkcxgANCpLxI_dij2QyxD-i1wQknRbzT4KU_1HzG5yDUhGOPxlMS4CGhz0kj6TqX8kSPXmjp_gTDAYwn7qq02ZmpWRlVJaTXjUU0HRnj7lBNMlq8sWJCRqzMlpuFDm8VsyrQz8rVIr0KlMBEOLqBHaGMdGe-5U0R2pzK-rwmiNXQrlezFITGna6V2O-0btlmDqJb3Gt7FLQ4MITLG9YWd-qkhN00EPiO-UdT8zxdHPnBHUqWGegPXvS5dLBsrRsKZSQrq2XJ51fbhSm5Q0FpmWWHWC1boKbz_VAsTjZu2i2dJrcLmZieHKUCS55p0a3y46TufUZrW-f0JcTWpDF7lXHHUANm6v6h6LfFKDl22zBFjn91I91JOC3hJugBKYJGCCmeFwh1meI2-7gLWzu0LkKTNZBKQNCJk3ZtgN7FbLc4ikTF1E-dareQmBCVYCYUA12gJZaQ)
 ![](https://lh3.googleusercontent.com/u/0/docs/ADP-6oEbdnW1jLf3TfFGuxOQOZRgodKmU49onvyVGKBPwwyD8eWl_S6ZI_egBYevuiYo_ZzOjmqdm5hoMfgWSF5bCuxEZOet1nNMNfUYXDb-ackntv1vlSah_yKmotaHN1CV2R90ETOOr61cT_KwBue0SiKZbV0A1cscBaGyOItkM-1Fxoguq2aABjiGLn4gSKGkw69TqalebL5SOn6crtXk7z-SlS6bWDpqj6wWRug_0Zopfx9ITdkRRXwJSd5uDhPjebyWFkBHgjUyItfGpIsZqTuYW4jnWEtbYyCdG_f521cPfZRYCZAm8_Gl5bCIF91h2e5Qb6amAfotZ9FPfgBIqrAxz53ZAfqpAXL7CrJrNQKbu7haXfuJSP4z5j3YXDAzeZTkdE6fukIs1OD_lv0SACH1SQ3x2WjhOTn3eau8-WhlyYIB61Pj9exEXYc_6EUfWXxcKklnwYpZ2E8lM6uaatbxEq7DwQ6czNeacQhqTjnjEIYKrWH-1YwDkXzFIIIpUAp-IvogQRpYPJ9NgR-VaLaBewkdIFCs7YjNgF5lJTWibEw0vwgNiCdvesLCf7gSwb_fVA4Vg5MV3pLQiaPS7b5w0BupnZQaJXHYHIrr2NSnPJPq4G3dBFsEXSkaIhWErWeFfIgfsfV69HUG6fHxwphOZT2TBVHTOg2hMPuReHFt-qsW9EklPuyZY4qlO4TmG-yaFKknk_BsDzMTQaU6cOTFTEjwvVgVRzhqkXNz1RHGARYd0KIOagifIdgAkluuV9pwvKI2Iu8-A004BBXE-_0Ne6QBB32HYLEeFiGpsDFdS8VDEatpYS93in1J57XxrjqGucKOokZP3jIsS7xMzSXIT8tnsxYyjvRd25PX4012Il8hbM1GErGW_nZh8sRQfk6ghdbj2rtVAK7dvSpt9S_879U)
 
-## Full system demo fits in a single app 
-To make this demo system easy to use, the system does not depend on any external services, such as Firebase, Google Cloud Notification, Dockers, or any Email/SMS service. Yet implementation such as account verification and push notification is provided for the sake of completeness. <mark>**All operation in the demo system, unless otherwise marked, is fully functional in a closed environment simulation.**</mark>
+## 只需要一個APP就能進行完整系統 demo
 
-For this to work, we introduce the concept of **"mock devices"**. It means we can simulate multiple devices (smartphones or tablets) in a single app. The back-end server also runs embedded with this app by default (can be changed to connect to a remote server by options). In a minimal configuration, you only need to **install one APP**, and this APP can simulate multiple devices running multiple apps by actors with various roles. This is also desirable to demo scenarios such as the interaction among multiple guests, multiple staff, and administrators.
+為了讓本 demo 系統易於使用，本專案不依賴任何外部服務，例如 Firebase、Google Cloud Notification、Dockers 或其他電子郵件/短信服務等。然而，為了保持功能完整性，本專案仍提供了諸多如帳戶驗證、推送通知等的功能實現。 <mark>**Demo 系統中的所有操作，除有特別註明外，均能在封閉環境中完全模擬其正常功能之運作。**</mark>
 
-## Application Features
-1. **Guest registration:** Guest register by phone number and OTP code (by simulated SMS), and then update basic information.
-2. **Coupon redeem:** Guests can choose to use coupons from a list of admin-defined policies according to their individual available points. For example, use 5 points to exchange an espresso coffee or a glass of orange juice. If the guest has enough points and the coupon is redeemed successfully, the points will be deducted from the guest's account. A transaction will be saved for a later query.
-3. **User management:** Staff or managers (in our system, they have the role of _user_ which is different from _guest_) can use the admin app to manage (create, delete, update, or query) users. The additional function includes password reset by Email, by phone, or by manually.
-4. **Store management:** Staff or managers can use the admin app to create, delete, update, or query stores. A store can be configured to link to multiple users. Each link has the attribute of either staff or manager, representing the user's role in that store. A user in a manager role can manage all the users in that store, but not others as restricted by the system for security purposes. In contrast, a user in an administrator role can manage _all users_. A user in a staff role can give points to guests as store gifts. This is done by scanning the 2D bar code generated by the guest's app using the admin app. A list of stores is also available to be displayed in the guest app for finding directions.
-5. **Transaction management:** Staff or managers can create, delete, update, or query transactions. A transaction can be a record of an order a guest has placed in a certain store or points give and takes. For example, if a guest spends more than $20 then he can get 5 points, he or she can then use the 5 points to exchange for another cup of coffee.  A transaction keeps a record like that. In reality, integration with the POS system might be needed, but this is just for demo purposes.
-6. **Mock device management:** As mentioned before, in order to demo actors with various roles with ease, we need the ability to simulate multiple devices. These devices can have different (mock) phone numbers or Emails in order to receive verification codes sent by the server. You can easily manage these mock devices or check messages for a specific device in the demo app.
+為此，我們引入了「**模擬裝置**」的概念。 意思是我們可以在一個 APP 中模擬多個裝置（也就是手機或平板等）。在預設配置下執行時，後端伺服器亦嵌入於此 APP 中一同執行（此行為可透過選項更改為連接到遠端伺服器）。在極簡配置下，您只需**安裝一個APP**，而這個 APP 可以模擬不同角色的人員在多台裝置上分別執行多個 APP。這尤其適合我們所需要的 demo 場景，例如模擬多個顧客、多個員工和管理員之間的互動。
 
-## System Features
-1. **Pure Dart**: The code is written in pure Dart completely. There is no need for native dependency such as SQLite. For this, we have chosen [Hive](https://github.com/hivedb/hive) as the backend storage. Hive is known for its performance and scalability. The front-end app is developed with Flutter SDK, while the back-end is developed only with Dart SDK (no Flutter is required for the server, we think it's the correct way to do this). Pure Dart provides the advantage of easy migration to various platforms without the hassles to deal with platform-dependent stuff.
-2. **Configurable embedded/remote server:** The backend server runs embedded with the demo app by default. This can be changed by options in the demo app to connect to a remote server. By doing so, you need to prepare your own computer running the server instance and enter the correct server URL in the demo app.
-3. **Multilingual support:** The front-end app is fully multilingual support. It comes default with 4 languages: English, Chinese(繁體中文), Japanese(日本語), and Korean(한국어). This can be configured in the demo app at any time.
-4. **Dark mode support:** Dark mode can be enabled or disabled in the demo app at any time.
+## 系統功能
+1. **顧客註冊**：顧客可通過電話號碼及 OTP（模擬的一次性簡訊）代碼註冊帳戶，然後更新基本資料。
+2. **優惠券兌換**：顧客可根據自己的可用點數從管理員所定義的規則中選擇並使用優惠券。比如用5點兌換一杯特濃 espresso 咖啡或者一杯橙汁。如果顧客有足夠的點數且優惠券兌換成功的話，點數將從顧客的賬戶中扣除。交易則將被保存以供未來稽核及查詢。
+3. **使用者管理**：員工或經理（在我們的系統中，他們的角色定義為 _user_ 或 「_使用者_」，不同於 _guest_ 也就是「_顧客_」）可使用 Admin APP 來管理（創建、刪除、更新或查詢）使用者。還有其他功能包含：通過電子郵件、電話或手動等方式來重置使用者密碼。
+4. **店舖管理**：員工或經理可使用Admin APP來創建、刪除、更新或查詢各個店舖（也就是分店）。 一筆店舖資料中可設定其關聯到多個使用者，而此與使用者的關聯可指定其角色為該店舖的員工或經理。具有經理角色的使用者可以管理該店舖中的所有使用者，但不能管理其他的使用者，這當然是出於安全考量而設計的系統限制。相對的，具有「系統管理員」角色的使用者則可以管理所有使用者。具有員工角色的使用者可以給顧客該店舖的點數作為店舖贈禮。這是透過使用 Admin APP 來掃描 Guest APP 所生成的二維條碼來完成的。為了方便顧客查找店舖地址等資訊，在 Guest APP 中 也提供了店舖列表。
+5. **交易紀錄管理**：員工或經理可以創建、刪除、更新或查詢交易紀錄。所謂交易紀錄是指某顧客在某店舖的消費記錄，或者也可以是點數增加或減少的記錄。例如：如果顧客消費超過200元，那麼他就能獲得5點，然後他可以用這5點來換另一杯咖啡等，像這樣的事件就會被儲存於於「**交易紀錄**」中。實務應用上，這可能需要與 POS 系統進行額外的整合工作，不過我們這裡就針對能 demo 的部份進行實現。
+6. **模擬裝置管理**：如前文所提及，為了能夠輕易 demo 具有各種角色的人員間的互動，我們需要具備模擬多個裝置（也就是手機或平板）的能力。這些裝置可具有不同的電話號碼（當然這也是模擬的）或電子郵件信箱，以便接收伺服器所發送的驗證碼、 SMS 或通知等。您可以在「**演示設置**」中管理這些模擬裝置或檢視該裝置所收到的訊息等。
 
-## Sponsor me for more development
-If this demo system is useful to you, please consider [sponsor me](https://fundrazr.com/flutter_full_demo). This will allow me to devote more time improving this project or create more projects like this.
+## 系統特色
+1. **Pure Dart**：本專案代碼完全用 Dart 編寫，不依賴如 SQLite 之類的 native code。為此，我們選擇了 [Hive](https://github.com/hivedb/hive) 作為後端資料存儲。Hive 以其高性能和擴展性著稱。前端 APP 使用 Flutter SDK 開發，而後端僅使用 Dart SDK 開發（伺服器並不需要 Flutter，我們認為這才是正確的做法）。 Pure Dart 提供了輕鬆移植到各種平台的優勢。
+2. **可選擇的的嵌入式/遠端伺服器**：後端伺服器在預設配置下是一同嵌入於 APP 中執行的。這可以通過 APP 中的「**演示設置**」內的選項來更改成連接到遠端伺服器。如果要連線到遠端，您需要準備自己的電腦來執行伺服器程序，當然也必須在 APP 中設定正確伺服器 URL。
+3. **支援多國語言**：前端 APP 完全支援多國語言，目前支援 4 種語言：英文、中文、日文、韓文。語言的設定可在 APP 內隨時更改。
+4. **支援深色模式**：可以隨時在 APP 中啟用或停用深色模式。
 
-Do you want to add more features? [Reach me out](https://github.com/cybercying).
+## 請考慮參與贊助本專案
+如果您認為本專案對您有幫助，請考慮[贊助我](https://fundrazr.com/flutter_full_demo)。如此便能讓我有更多精力投注在改良本專案，或者開發其他類似的專案上。
 
-## Manuals and other documents
+需要增加什麼功能嗎？[可聯絡我](https://github.com/cybercying)。
+
+## 系統手冊及其他文件（英文）
 * [System manual](doc/system_manual.md)
 * [License](LICENSE) (MIT license)
