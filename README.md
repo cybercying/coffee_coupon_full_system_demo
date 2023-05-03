@@ -64,4 +64,5 @@ Do you want to add more features? [Reach me out](https://github.com/cybercying).
 
 ## Manuals and other documents
 * [System manual](doc/system_manual.md)
+* [User story](assets/markdown/userStory.md)
 * [License](LICENSE) (MIT license)

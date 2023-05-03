@@ -64,4 +64,5 @@ Si este sistema de demostración es útil para usted, por favor considere [patro
 
 ## Manuales y otros documentos (inglés)
 * [System manual](doc/system_manual.md)
+* [User story](assets/markdown/userStory.md)
 * [License](LICENSE) (MIT license)

@@ -64,4 +64,5 @@
 
 ## 매뉴얼 및 기타 문서 (영어)
 * [System manual](doc/system_manual.md)
+* [User story](assets/markdown/userStory.md)
 * [License](LICENSE) (MIT license)
