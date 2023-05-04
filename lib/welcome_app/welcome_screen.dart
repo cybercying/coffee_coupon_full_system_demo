@@ -369,7 +369,7 @@ class ProjectInfoScreen extends StatelessWidget {
                   children: [
                     FloatingActionButton.extended(
                       onPressed: () async {
-                        await confirmOpenUrl("https://gvn.page.link/coffee_coupon_full_system_demo");
+                        await confirmOpenUrl("https://github.com/cybercying/coffee_coupon_full_system_demo");
                       },
                       heroTag: 'openGitHub',
                       label: Text("welcomeScreen.openGitHub".tr),
