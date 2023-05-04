@@ -50,6 +50,8 @@ This is a full featured demo, you might need to learn some basics in order to ex
 
 ''';
 
+const _projectOfficialUrl = 'https://github.com/cybercying/coffee_coupon_full_system_demo';
+
 String? hasPrefix(String? str, String prefix) {
   if (str == null) {
     return null;
@@ -79,7 +81,14 @@ Markdown buildMarkdown(AppSettings appSettings, ThemeData theme, String data, {s
         if (loc != null) {
           appSettings.changeLocaleIfValid(loc);
         }
-        else {
+        else if (href != null) {
+          void replacePrefix(String prefix, String replaceWith) {
+            if (href!.startsWith(prefix)) {
+              href = href!.replaceRange(0, prefix.length, replaceWith);
+            }
+          }
+          replacePrefix('doc/', '$_projectOfficialUrl/blob/main/doc/');
+          replacePrefix('assets/markdown/', '$_projectOfficialUrl/blob/main/assets/markdown/');
           await confirmOpenUrl(href);
         }
       },
@@ -369,7 +378,7 @@ class ProjectInfoScreen extends StatelessWidget {
                   children: [
                     FloatingActionButton.extended(
                       onPressed: () async {
-                        await confirmOpenUrl("https://github.com/cybercying/coffee_coupon_full_system_demo");
+                        await confirmOpenUrl(_projectOfficialUrl);
                       },
                       heroTag: 'openGitHub',
                       label: Text("welcomeScreen.openGitHub".tr),
