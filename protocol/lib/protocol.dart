@@ -194,7 +194,7 @@ class HttpServerConnection extends ServerConnection {
 
   @override
   Future<ServerResponse> sendServerCommand(ServerCommand cmd) async {
-    cmd.channel ??= channel;
+    cmd.channel = channel;
     HttpClientRequest request = await client.postUrl(serverApiUrl);
     request.write(jsonEncode(cmd.toJson()));
     HttpClientResponse response = await request.close();
