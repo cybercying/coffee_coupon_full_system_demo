@@ -141,7 +141,7 @@ ThemeData buildTheme(Brightness brightness) {
   }
 }
 
-const _snakebarAnimationDuration = Duration(milliseconds: 150);
+const _snackbarAnimationDuration = Duration(milliseconds: 150);
 
 Future<void> uiNotifyReceivedSMS(String title, String message) async {
   UiTransientState uiState = Get.find();
@@ -186,7 +186,7 @@ Future<void> uiNotifyUpdateSuccess([String? message, String? title]) async {
       borderWidth: 1,
       borderColor: Colors.black,
       snackPosition: SnackPosition.BOTTOM,
-      animationDuration: _snakebarAnimationDuration,
+      animationDuration: _snackbarAnimationDuration,
       snackbarStatus: (status) {
         if (status == SnackbarStatus.CLOSED) {
           if (uiState.snackbarController == controller) {
@@ -222,7 +222,7 @@ Future<void> uiNotifyError(String message, {String? title}) async {
       borderWidth: 1,
       borderColor: Colors.black,
       snackPosition: SnackPosition.BOTTOM,
-      animationDuration: _snakebarAnimationDuration,
+      animationDuration: _snackbarAnimationDuration,
       snackbarStatus: (status) {
         if (status == SnackbarStatus.CLOSED) {
           if (uiState.snackbarController == controller) {
