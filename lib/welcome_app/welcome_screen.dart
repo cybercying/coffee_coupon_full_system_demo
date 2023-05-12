@@ -74,6 +74,7 @@ Markdown buildMarkdown(AppSettings appSettings, ThemeData theme, String data, {s
           'README_ja.md': 'loc:ja_JP',
           'README_ko.md': 'loc:ko_KR',
           'README_es.md': 'loc:es_ES',
+          'LICENSE': '$_projectOfficialUrl/blob/main/LICENSE',
         };
         log('onTapLink: text: $text, href: $href, title: $title');
         href = fileNameMapping[href] ?? href;
