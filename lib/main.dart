@@ -138,7 +138,7 @@ Future<void> initServerAndApp(AppConfig appConfig) async {
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await initServerAndApp(const AppConfig(appAssetPathPrefix: ''));
+  await initServerAndApp(const AppConfig(appAssetPathPrefix: '', useMouseToDrag: true));
   runApp(const MyApp());
 }
 
