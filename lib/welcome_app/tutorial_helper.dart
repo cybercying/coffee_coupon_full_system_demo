@@ -11,7 +11,6 @@
 import 'dart:async';
 import 'dart:developer';
 
-import 'package:card_settings/card_settings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
@@ -43,7 +42,7 @@ class TutorialHelper {
   Future<void> show() async {
     if (waitForWidget != null) {
       await Future.delayed(waitForWidget!);
-      await waitWidgetToAppear(WidgetFinder(matcher: TypeMatcher(type: CardSettings)));
+      await waitWidgetToAppear(finder);
     }
     BuildContext context = contextFinder.evaluate().single;
     List<TargetFocus> targets = [];
