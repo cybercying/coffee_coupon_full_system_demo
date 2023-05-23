@@ -29,7 +29,7 @@ class AppConfig {
   final int? overrideCurrentDevice;
   final String? dir;
   final bool disableTransition;
-  final bool disableSnakebars;
+  final bool disableSnackbar;
   final bool disableListViewBuilder;
   final bool useMouseToDrag;
   final String? updateTranslationFilesPathPrefix;
@@ -39,7 +39,7 @@ class AppConfig {
     this.overrideCurrentDevice,
     this.dir,
     this.disableTransition = false,
-    this.disableSnakebars = false,
+    this.disableSnackbar = false,
     this.disableListViewBuilder = false,
     this.useMouseToDrag = false,
     this.updateTranslationFilesPathPrefix,

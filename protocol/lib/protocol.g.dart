@@ -135,6 +135,10 @@ ServerCommand _$ServerCommandFromJson(Map<String, dynamic> json) =>
           ? null
           : UpdateMockMessageCommand.fromJson(
               json['updateMockMessageCommand'] as Map<String, dynamic>),
+      changePasswordCommand: json['changePasswordCommand'] == null
+          ? null
+          : ChangePasswordCommand.fromJson(
+              json['changePasswordCommand'] as Map<String, dynamic>),
     )
       ..channel = json['channel'] == null
           ? null
@@ -152,11 +156,7 @@ ServerCommand _$ServerCommandFromJson(Map<String, dynamic> json) =>
               json['updatePropCommand'] as Map<String, dynamic>)
       ..loginCommand = json['loginCommand'] == null
           ? null
-          : LoginCommand.fromJson(json['loginCommand'] as Map<String, dynamic>)
-      ..changePasswordCommand = json['changePasswordCommand'] == null
-          ? null
-          : ChangePasswordCommand.fromJson(
-              json['changePasswordCommand'] as Map<String, dynamic>);
+          : LoginCommand.fromJson(json['loginCommand'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$ServerCommandToJson(ServerCommand instance) {
   final val = <String, dynamic>{};

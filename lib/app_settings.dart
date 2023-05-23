@@ -490,7 +490,7 @@ class AppSettings extends GetxController {
   }
 
   void notifyNewMessages(List<MockMessage> newMsg) {
-    if (appConfig.disableSnakebars) {
+    if (appConfig.disableSnackbar) {
       return;
     }
     var device = currentMockDevice();

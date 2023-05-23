@@ -11,7 +11,7 @@ AppConfig _$AppConfigFromJson(Map<String, dynamic> json) => AppConfig(
       overrideCurrentDevice: json['overrideCurrentDevice'] as int?,
       dir: json['dir'] as String?,
       disableTransition: json['disableTransition'] as bool? ?? false,
-      disableSnakebars: json['disableSnakebars'] as bool? ?? false,
+      disableSnackbar: json['disableSnackbar'] as bool? ?? false,
       disableListViewBuilder: json['disableListViewBuilder'] as bool? ?? false,
       useMouseToDrag: json['useMouseToDrag'] as bool? ?? false,
       updateTranslationFilesPathPrefix:
@@ -33,7 +33,7 @@ Map<String, dynamic> _$AppConfigToJson(AppConfig instance) {
   writeNotNull('overrideCurrentDevice', instance.overrideCurrentDevice);
   writeNotNull('dir', instance.dir);
   val['disableTransition'] = instance.disableTransition;
-  val['disableSnakebars'] = instance.disableSnakebars;
+  val['disableSnackbar'] = instance.disableSnackbar;
   val['disableListViewBuilder'] = instance.disableListViewBuilder;
   val['useMouseToDrag'] = instance.useMouseToDrag;
   writeNotNull('updateTranslationFilesPathPrefix',

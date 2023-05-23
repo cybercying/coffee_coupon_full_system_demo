@@ -145,7 +145,7 @@ const _snackbarAnimationDuration = Duration(milliseconds: 150);
 
 Future<void> uiNotifyReceivedSMS(String title, String message) async {
   UiTransientState uiState = Get.find();
-  if (uiState.appConfig.disableSnakebars || uiState.disableSnackbar) {
+  if (uiState.appConfig.disableSnackbar || uiState.disableSnackbar) {
     return;
   }
   await uiState.closeSnackbar();
@@ -173,7 +173,7 @@ Future<void> uiNotifyCloseAll() async {
 
 Future<void> uiNotifyUpdateSuccess([String? message, String? title]) async {
   UiTransientState uiState = Get.find();
-  if (uiState.appConfig.disableSnakebars || uiState.disableSnackbar) {
+  if (uiState.appConfig.disableSnackbar || uiState.disableSnackbar) {
     return;
   }
   await uiState.closeSnackbar();
@@ -209,7 +209,7 @@ Future<void> alertServerError(ServerException e) async {
 Future<void> uiNotifyError(String message, {String? title}) async {
   title ??= 'gen.error'.tr;
   UiTransientState uiState = Get.find();
-  if (uiState.appConfig.disableSnakebars || uiState.disableSnackbar) {
+  if (uiState.appConfig.disableSnackbar || uiState.disableSnackbar) {
     return;
   }
   await uiState.closeSnackbar();
