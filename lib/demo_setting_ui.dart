@@ -87,7 +87,6 @@ class _DemoSettingScreenState extends State<DemoSettingScreen> {
                                       initialValue: appSettings.isDarkTheme.value,
                                       onChanged: (value) async {
                                         appSettings.isDarkTheme.value = value;
-                                        log('changeDarkMode1: $value');
                                         Get.changeTheme(buildTheme(value ? Brightness.dark : Brightness.light));
                                         await Get.forceAppUpdate();
                                         appSettings.saveState();

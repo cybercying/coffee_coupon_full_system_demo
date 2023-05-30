@@ -9,7 +9,6 @@
   [Reach me out](https://github.com/cybercying).
 */
 import 'dart:convert';
-import 'dart:developer';
 import 'package:protocol/test_data.dart';
 import 'client_state.dart';
 import 'protocol.dart';
@@ -174,7 +173,6 @@ class DataTester {
   }
 
   Future<void> inputDataSet4() async {
-    log('inputDataSet4.1');
     conn.logout();
     String email = 'lbonifant0@wikimedia.org';
     await conn.sendServerCommand(
@@ -188,7 +186,6 @@ class DataTester {
             )
         )
     );
-    log('inputDataSet4.2');
     ServerResponse resp;
     resp = await conn.sendServerCommand(ServerCommand(queryMockMessageCommand:
         QueryMockMessageCommand(
@@ -200,7 +197,6 @@ class DataTester {
     ));
     var result = resp.queryMockMessageResponse!.result;
     var firstMsg = result[0];
-    log('firstMsg: $firstMsg');
     if (firstMsg.email != email) throw DataBuilderException('Email not match: ${firstMsg.email}');
     resp = await conn.sendServerCommand(ServerCommand(resetPasswordCommand:
         ResetPasswordCommand(
@@ -209,10 +205,8 @@ class DataTester {
     ));
     var generatedPassword = resp.resetPasswordResponse!.generatedPassword!;
     var hashedPassword = SharedApi.encryptedDigest(generatedPassword);
-    log('inputDataSet4.3');
     DateTime time = DateTime.now();
     await conn.login(LoginCommand(email: email, actuatedHashedPassword: SharedApi.actuatedHashedPassword(email, hashedPassword, time), time: time));
-    log('inputDataSet4.completed');
   }
 
   Future<void> performTest() async {

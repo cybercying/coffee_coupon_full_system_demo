@@ -140,7 +140,6 @@ class TransactionApiHandler extends ApiHandler {
       var fAdmin = context.loggedIn!.fAdmin;
       var managingStoreId = queryTransactionCommand.managingStoreId;
       List<GenTransaction> list = [];
-      log('tranbox: ${_tranBox.values.length}');
       for(var json in _tranBox.values) {
         var xtran = GenTransaction.fromJson(SharedApi.fixHiveJsonType(json));
         if (fAdmin || user.stores.where((su) => su.storeId == xtran.storeId).isNotEmpty) {

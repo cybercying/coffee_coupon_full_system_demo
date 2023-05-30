@@ -113,13 +113,11 @@ class MockNotificationListener {
             waitList: waitList,
             waitSeconds: 30
         );
-        //log('waitForNotification: ${receiver.type}, cmd: ${waitForNotificationCommand.toJson()}');
         ServerResponse resp = await conn.sendServerCommand(
           ServerCommand(waitForNotificationCommand:
           waitForNotificationCommand
           )
         );
-        //log('waitForNotification.1: ${receiver.type}, ids: ${resp.waitForNotificationResponse!.eventfulIds}');
         if (resp.waitForNotificationResponse!.eventfulIds.isNotEmpty) {
           await queryMockMessage();
         }

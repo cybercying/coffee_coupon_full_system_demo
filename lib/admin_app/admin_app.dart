@@ -67,7 +67,6 @@ class AdminApp extends GetxController {
   }
 
   Future<bool> login() async {
-    log('logging in...email:$email, password:$password');
     DateTime now = DateTime.now();
     try {
       loginResponse = await conn.login(
@@ -78,7 +77,6 @@ class AdminApp extends GetxController {
               time: now
           )
       );
-      log('loginResponse: ${loginResponse?.toJson()}');
     }
     catch(e) {
       log('error login: $e');

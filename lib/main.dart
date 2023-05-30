@@ -42,7 +42,6 @@ Future<void> initApp(AppConfig appConfig) async {
   var appSettings = AppSettings(appConfig);
   Get.put(appSettings);
   await appSettings.init();
-  log('appSettings.init() completed!');
 //  Languages().updateTranslationFiles(pathPrefix: appConfig.updateTranslationFilesPathPrefix);
 }
 

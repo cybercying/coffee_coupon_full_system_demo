@@ -21,12 +21,6 @@ import 'package:get/get.dart';
 
 import 'app_settings.dart';
 
-class FieldsBuilderOptions {
-  final bool detailed = true;
-  final bool editing = true;
-  final bool readOnly = false;
-}
-
 class FieldSectionDef {
   String label;
   FieldSectionDef({required this.label});

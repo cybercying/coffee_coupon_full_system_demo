@@ -236,7 +236,6 @@ class StoreApiHandler extends ApiHandler {
       var store = getStoreById(addUserToStoreCommand.storeId);
       var user = du._userApiHandler.getUserByEmail(addUserToStoreCommand.email);
       if (store == null || user == null) {
-        log('user: $user, store: $store, email: ${addUserToStoreCommand.email}');
         throw ServerApiException.error(ServerResponseCode.designatedTargetNotExist);
       }
       if (store.users.where((su) => su.uid == context.loggedIn!.uid && su.role == UserRoleAtStore.manager).isEmpty) {

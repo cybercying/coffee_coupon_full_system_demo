@@ -32,7 +32,6 @@ Future<void> initServer({Directory? dir}) async {
   final du = DbUtil();
   Get.put(du);
   await du.checkData();
-  du.info('Initializing...');
   var localCon = LocalServerConnection(du: du);
   DataTester tester = DataTester(localCon);
   await tester.checkSetup();

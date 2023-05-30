@@ -76,7 +76,6 @@ Markdown buildMarkdown(AppSettings appSettings, ThemeData theme, String data, {s
           'README_es.md': 'loc:es_ES',
           'LICENSE': '$_projectOfficialUrl/blob/main/LICENSE',
         };
-        log('onTapLink: text: $text, href: $href, title: $title');
         href = fileNameMapping[href] ?? href;
         String? loc = hasPrefix(href, 'loc:');
         if (loc != null) {
@@ -168,7 +167,6 @@ class WelcomeScreen extends StatelessWidget {
       title: "quickTour.mockDevices.title".tr,
       description: "quickTour.mockDevices".tr
     ).show();
-    log('TutorialHelper completed!');
   }
 
   @override
