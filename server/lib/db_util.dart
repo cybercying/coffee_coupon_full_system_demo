@@ -18,7 +18,6 @@ import 'package:protocol/protocol.dart';
 import 'package:logging/logging.dart';
 import 'package:logging_appenders/logging_appenders.dart';
 import 'package:hive/hive.dart';
-import 'package:server/rotating_file_appender2.dart';
 
 part 'api_parts/user_api_handler.dart';
 part 'api_parts/guest_api_handler.dart';
@@ -161,7 +160,7 @@ class DbUtil {
     }
   }
 
-  static RotatingFileAppender2? appender;
+  static RotatingFileAppender? appender;
 
   static List<Box> openedBoxes = [];
 
@@ -171,7 +170,7 @@ class DbUtil {
     if (!isWeb) {
       var logDir = combinePath(dir, 'log');
       await Directory(logDir).create();
-      appender = RotatingFileAppender2(baseFilePath: '$logDir/server.log');
+      appender = RotatingFileAppender(baseFilePath: '$logDir/server.log');
       appender!.attachToLogger(Logger.root);
     }
     Logger logger = Logger('server');
